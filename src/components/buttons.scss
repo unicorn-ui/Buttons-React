@@ -1,0 +1,64 @@
+// Colors
+
+.button {
+  composes: btn from './buttons-lite.scss';
+}
+
+.primary {
+  composes: btn-primary from './buttons-lite.scss';
+}
+
+.secondary {
+  composes: btn-secondary from './buttons-lite.scss';
+}
+
+.action {
+  composes: btn-action from './buttons-lite.scss';
+}
+
+// Shapes
+.square {
+  composes: btn-square from './buttons-lite.scss';
+}
+
+.box {
+  composes: btn-box from './buttons-lite.scss';
+}
+
+.rounded {
+  composes: btn-rounded from './buttons-lite.scss';
+}
+
+.pill {
+  composes: btn-pill from './buttons-lite.scss';
+}
+
+.circle {
+  composes: btn-circle from './buttons-lite.scss';
+}
+
+// Sizes
+.giant {
+  composes: btn-giant from './buttons-lite.scss';
+}
+
+.jumbo {
+  composes: btn-jumbo from './buttons-lite.scss';
+}
+
+.large {
+  composes: btn-large from './buttons-lite.scss';
+}
+
+.normal {
+  composes: btn-normal from './buttons-lite.scss';
+}
+
+.small {
+  composes: btn-small from './buttons-lite.scss';
+}
+
+.tiny {
+  composes: btn-tiny from './buttons-lite.scss';
+}
+

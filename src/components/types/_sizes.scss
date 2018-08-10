@@ -1,0 +1,50 @@
+/*
+* Button Sizes
+*
+* This file creates the various button sizes
+* (ex. .button-large, .button-small, etc.)
+*/
+@each $ubtn-size in $ubtn-sizes {
+  $ubtn-size-name: nth($ubtn-size, 1);
+  $ubtn-size-multiplier: nth($ubtn-size, 2);
+  $ubtn-size-namespace: #{$ubtn-namespace}-#{$ubtn-size-name};
+
+  #{$ubtn-size-namespace} {
+    font-size: $ubtn-font-size * $ubtn-size-multiplier;
+    height: $ubtn-height * $ubtn-size-multiplier;
+    line-height: $ubtn-height * $ubtn-size-multiplier;
+    padding: 0 ($ubtn-height * $ubtn-size-multiplier);
+  }
+}
+
+/*
+* Size Adjustment for equal height & width buttons
+*
+* Remove padding
+*/
+#{$ubtn-namespace}-circle,
+#{$ubtn-namespace}-box,
+#{$ubtn-namespace}-square {
+  padding: 0 !important;
+  width: $ubtn-height;
+}
+
+@each $ubtn-sizes-hash in $ubtn-sizes {
+  $ubtn-size: nth($ubtn-sizes-hash, 1);
+  $ubtn-multiplier : nth($ubtn-sizes-hash, 2);
+
+  // button-circle-SIZE, button-square-SIZE etc.
+  $ubtn-size-circle: #{$ubtn-namespace}-circle-#{$ubtn-size};
+  $ubtn-size-box: #{$ubtn-namespace}-box-#{$ubtn-size};
+  $ubtn-size-square: #{$ubtn-namespace}-square-#{$ubtn-size};
+
+  #{$ubtn-size-circle},
+  #{$ubtn-size-box},
+  #{$ubtn-size-square} {
+    font-size: $ubtn-font-size * $ubtn-multiplier;
+    width: $ubtn-height * $ubtn-multiplier;
+    height: $ubtn-height * $ubtn-multiplier;
+    line-height: $ubtn-height * $ubtn-multiplier;
+    padding: 0 ($ubtn-height * $ubtn-multiplier);
+  }
+}
