@@ -40,3 +40,28 @@ Shapes.
 <Button color='primary' shape='rounded'>Rounded</Button>
 ```
 
+Sizes.
+
+```jsx
+<Button color='primary' size='giant'>Giant</Button>
+```
+
+```jsx
+<Button color='primary' size='jumbo'>Jumbo</Button>
+```
+
+```jsx
+<Button color='primary' size='large'>Large</Button>
+```
+
+```jsx
+<Button color='primary' size='normal'>Normal</Button>
+```
+
+```jsx
+<Button color='primary' size='small'>Small</Button>
+```
+
+```jsx
+<Button color='primary' size='tiny'>Tiny</Button>
+```
