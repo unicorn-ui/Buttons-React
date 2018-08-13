@@ -66,11 +66,27 @@ Sizes.
 <Button color='primary' size='tiny'>Tiny</Button>
 ```
 
+Raised.
 ```jsx
 <Button raised>Raised</Button>
 ```
 
-Raised.
 ```jsx
 <Button raised color='primary' shape='rounded'>Raised Rounded Primary</Button>
+```
+
+```jsx
+<Button raised color='action' shape='rounded'>Raised Rounded Action</Button>
+```
+
+```jsx
+<Button raised color='highlight' shape='rounded'>Raised Rounded Highlight</Button>
+```
+
+```jsx
+<Button raised color='warning' shape='rounded'>Raised Rounded Warning</Button>
+```
+
+```jsx
+<Button raised color='caution' shape='rounded'>Raised Rounded Caution</Button>
 ```

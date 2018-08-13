@@ -77,3 +77,19 @@
 .raised-primary {
   composes: btn-raised-primary from './types/raised.css';
 }
+
+.raised-action {
+  composes: btn-raised-action from './types/raised.css';
+}
+
+.raised-highlight {
+  composes: btn-raised-highlight from './types/raised.css';
+}
+
+.raised-warning {
+  composes: btn-raised-warning from './types/raised.css';
+}
+
+.raised-caution {
+  composes: btn-raised-caution from './types/raised.css';
+}
