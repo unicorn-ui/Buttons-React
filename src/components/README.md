@@ -12,4 +12,14 @@ Basic usage.
 <Button color='action'>Action</Button>
 ```
 
+```jsx
+<Button color='highlight'>Highlight</Button>
+```
 
+```jsx
+<Button color='warning'>Warning</Button>
+```
+
+```jsx
+<Button color='caution'>Caution</Button>
+```

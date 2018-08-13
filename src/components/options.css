@@ -14,4 +14,8 @@
   --ubtn-action-color: #ffffff;
   --ubtn-highlight: #feae1b;
   --ubtn-highlight-color: #ffffff;
+  --ubtn-caution: #ff4351;
+  --ubtn-caution-color: #ffffff;
+  --ubtn-warning: #ffff99;
+  --ubtn-warning-color: #000000
 }
