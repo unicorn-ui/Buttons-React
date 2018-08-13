@@ -13,7 +13,6 @@ function getRaised(raised, color) {
   } else {
     raisedKey = `raised`;
   }
-  console.log(`getRaised raisedKey: ${raisedKey}. styles raised: ${styles[raisedKey]}`);
   return styles[raisedKey];
 }
 
