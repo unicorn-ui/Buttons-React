@@ -23,3 +23,9 @@ Basic usage.
 ```jsx
 <Button color='caution'>Caution</Button>
 ```
+
+Block or Stacked Buttons.
+
+```jsx
+<Button color='primary' block>Block Button</Button>
+```

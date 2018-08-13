@@ -1,6 +1,7 @@
-@import './options.css';
+@import 'options.css';
 /*@import '_mixins.css';*/
-@import './base.css';
+@import 'base.css';
+@import 'layout.css';
 
 .button {
   composes: btn from './base.css';
@@ -30,8 +31,9 @@
   composes: btn-caution from './base.css';
 }
 
-
-/*@import '_layout.css';*/
+.block {
+  composes: btn-block, btn-stacked from './layout.css';
+}
 
 /*@import 'types/_shapes.scss';*/
 /*@import 'types/_raised.scss';*/
