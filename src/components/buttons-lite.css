@@ -1,6 +1,9 @@
-@import './options.css';
-/*@import '_mixins.css';*/
-@import './base.css';
+@import 'options.css';
+@import 'base.css';
+@import 'layout.css';
+@import 'types/shapes.css';
+@import 'types/sizes.css';
+/*@import 'types/_raised.scss';*/
 
 .button {
   composes: btn from './base.css';
@@ -30,10 +33,39 @@
   composes: btn-caution from './base.css';
 }
 
+.block {
+  composes: btn-block, btn-stacked from './layout.css';
+}
 
-/*@import '_layout.css';*/
+.rounded {
+  composes: btn-rounded from './types/shapes.css';
+}
 
-/*@import 'types/_shapes.scss';*/
-/*@import 'types/_raised.scss';*/
-/*@import 'types/_sizes.scss';*/
 
+.pill {
+  composes: btn-pill from './types/shapes.css';
+}
+
+.giant {
+  composes: btn-giant from './types/sizes.css';
+}
+
+.jumbo {
+  composes: btn-jumbo from './types/sizes.css';
+}
+
+.large {
+  composes: btn-large from './types/sizes.css';
+}
+
+.normal {
+  composes: btn-normal from './types/sizes.css';
+}
+
+.small {
+  composes: btn-small from './types/sizes.css';
+}
+
+.tiny {
+  composes: btn-tiny from './types/sizes.css';
+}

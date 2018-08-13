@@ -1,0 +1,13 @@
+/*
+* Button Shapes
+*
+* This file creates the various button shapes
+* (ex. Rounded, Pill)
+*/
+.btn-pill {
+  border-radius: 200px;
+}
+
+.btn-rounded {
+  border-radius: 3px;
+}

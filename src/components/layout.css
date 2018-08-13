@@ -3,7 +3,8 @@
 *
 * Very Miminal Layout Styles
 */
-#{$ubtn-namespace}-block,
-#{$ubtn-namespace}-stacked {
+.btn-block,
+.btn-stacked {
   display: block;
+  width: 100%;
 }

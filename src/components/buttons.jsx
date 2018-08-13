@@ -3,12 +3,13 @@ import React from 'react';
 import { compact, omit } from 'underscore';
 import styles from './buttons-lite.css';
 
-function getClasses(className, { color, shape, size, link }) {
-  const shouldAddBase = color || shape || size || link;
+function getClasses(className, { color, shape, size, link, block }) {
+  const shouldAddBase = color || shape || size || link || block;
   const classes = compact([
     color && styles[color],
     shape && styles[shape],
     size && styles[size],
+    block && styles.block,
     link && styles.link,
     shouldAddBase && styles.button,
     className,
@@ -32,8 +33,9 @@ export default function Button({ children, className, ...rest }) {
 
 Button.propTypes = {
   color: PropTypes.oneOf(['primary', 'secondary', 'action', 'highlight', 'warning', 'caution']),
-  shape: PropTypes.oneOf(['square', 'box', 'rounded', 'pill', 'circle']),
+  shape: PropTypes.oneOf(['rounded', 'pill']),
   size: PropTypes.oneOf(['tiny', 'small', 'normal', 'large', 'jumbo', 'giant']),
+  block: PropTypes.bool,
   link: PropTypes.bool,
   className: PropTypes.string,
   children: PropTypes.node.isRequired,
@@ -44,5 +46,6 @@ Button.defaultProps = {
   color: undefined,
   shape: undefined,
   size: undefined,
+  block: false,
   link: undefined,
 };
