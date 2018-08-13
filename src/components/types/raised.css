@@ -1,0 +1,143 @@
+@import '../options.css';
+
+/*
+* Raised Buttons
+*
+* A classic looking button that offers
+* great depth and affordance.
+*/
+.btn-raised {
+  border-color: var(--ubtn-bgcolor-darkened);
+  border-style: solid;
+  border-width: 1px;
+  line-height: var(--ubtn-line-height);
+  background: linear-gradient(to bottom, var(--ubtn-bgcolor-lightened), var(--ubtn-bgcolor-darkened));
+  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, .3), 0 1px 2px rgba(0, 0, 0, .15);
+
+  &:hover, &:focus {
+    background: linear-gradient(to bottom,  var(--ubtn-bgcolor-darkened), var(--ubtn-bgcolor-lightened));
+    opacity: .8;
+  }
+
+  &:active,
+  &.active,
+  &.is-active {
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, .2), 0px 1px 0px rgba(255, 255, 255, 1);
+  }
+}
+
+
+/*
+* Raised Button Colors
+*
+* Create colors for raised buttons (e.g. button-raised-primary). Note,
+* we do inherit some base color definitions (see _base.scss)
+*/
+
+// Primary
+$primaryBackground: palette(primary);
+.btn-raised-primary {
+  border-color: darken($primaryBackground, 5%);
+  background: linear-gradient(lighten($primaryBackground, 5%), darken($primaryBackground, 5%));
+
+  &:hover,
+  &:focus {
+    background: linear-gradient(to bottom,  lighten($primaryBackground, 8%), darken($primaryBackground, 7%));
+  }
+  &:active,
+  &.active,
+  &.is-active  {
+    border-color: darken($primaryBackground, 10%);
+    background: desaturate($primaryBackground, 10%);
+  }
+}
+
+// Secondary
+$secondaryBackground: $white;
+.btn-raised-secondary {
+  border-color: darken($secondaryBackground, 5%);
+  background: linear-gradient(lighten($secondaryBackground, 5%), darken($secondaryBackground, 5%));
+
+  &:hover,
+  &:focus {
+    background: linear-gradient(to bottom,  lighten($secondaryBackground, 8%), darken($secondaryBackground, 7%));
+  }
+  &:active,
+  &.active,
+  &.is-active  {
+    border-color: darken($secondaryBackground, 10%);
+    background: desaturate($secondaryBackground, 10%);
+  }
+}
+
+// Action
+$actionBackground: palette(action);
+.btn-raised-action {
+  border-color: darken($actionBackground, 5%);
+  background: linear-gradient(lighten($actionBackground, 5%), darken($actionBackground, 5%));
+
+  &:hover,
+  &:focus {
+    background: linear-gradient(to bottom,  lighten($actionBackground, 8%), darken($actionBackground, 7%));
+  }
+  &:active,
+  &.active,
+  &.is-active  {
+    border-color: darken($actionBackground, 10%);
+    background: desaturate($actionBackground, 10%);
+  }
+}
+
+// Highlight
+$highlightBackground: palette(highlight);
+.btn-raised-highlight {
+  border-color: darken($highlightBackground, 5%);
+  background: linear-gradient(lighten($highlightBackground, 5%), darken($highlightBackground, 5%));
+
+  &:hover,
+  &:focus {
+    background: linear-gradient(to bottom,  lighten($highlightBackground, 8%), darken($highlightBackground, 7%));
+  }
+  &:active,
+  &.active,
+  &.is-active  {
+    border-color: darken($highlightBackground, 10%);
+    background: desaturate($highlightBackground, 10%);
+  }
+}
+
+// Warning
+$warningBackground: palette(warning, hover);
+.btn-raised-warning {
+  border-color: darken($warningBackground, 5%);
+  background: linear-gradient(lighten($warningBackground, 5%), darken($warningBackground, 5%));
+
+  &:hover,
+  &:focus {
+    background: linear-gradient(to bottom,  lighten($warningBackground, 8%), darken($warningBackground, 7%));
+  }
+  &:active,
+  &.active,
+  &.is-active  {
+    border-color: darken($warningBackground, 10%);
+    background: desaturate($warningBackground, 10%);
+  }
+}
+
+// Warning
+$cautionBackground: palette(caution);
+.btn-raised-caution {
+  border-color: darken($cautionBackground, 5%);
+  background: linear-gradient(lighten($cautionBackground, 5%), darken($cautionBackground, 5%));
+
+  &:hover,
+  &:focus {
+    background: linear-gradient(to bottom,  lighten($cautionBackground, 8%), darken($cautionBackground, 7%));
+  }
+  &:active,
+  &.active,
+  &.is-active  {
+    border-color: darken($cautionBackground, 10%);
+    background: desaturate($cautionBackground, 10%);
+  }
+}

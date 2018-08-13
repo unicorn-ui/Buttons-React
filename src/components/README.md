@@ -65,3 +65,7 @@ Sizes.
 ```jsx
 <Button color='primary' size='tiny'>Tiny</Button>
 ```
+
+```jsx
+<Button raised>Raised</Button>
+```

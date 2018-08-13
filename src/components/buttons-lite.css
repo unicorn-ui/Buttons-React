@@ -3,7 +3,7 @@
 @import 'layout.css';
 @import 'types/shapes.css';
 @import 'types/sizes.css';
-/*@import 'types/_raised.scss';*/
+@import 'types/raised.css';
 
 .button {
   composes: btn from './base.css';
@@ -68,4 +68,8 @@
 
 .tiny {
   composes: btn-tiny from './types/sizes.css';
+}
+
+.raised {
+  composes: btn-raised from './types/raised.css';
 }
