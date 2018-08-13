@@ -29,3 +29,14 @@ Block or Stacked Buttons.
 ```jsx
 <Button color='primary' block>Block Button</Button>
 ```
+
+Shapes.
+
+```jsx
+<Button color='primary' shape='pill'>Pill</Button>
+```
+
+```jsx
+<Button color='primary' shape='rounded'>Rounded</Button>
+```
+
