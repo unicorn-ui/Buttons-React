@@ -1,0 +1,31 @@
+@import './options.css';
+/*@import '_mixins.css';*/
+@import './base.css';
+
+
+.button {
+  composes: btn from './base.css';
+}
+
+.primary {
+  composes: btn-primary from './base.css';
+}
+
+.secondary {
+  composes: btn-secondary from './base.css';
+}
+
+.action {
+  composes: btn-action from './base.css';
+}
+
+.highlight {
+  composes: btn-highlight from './base.css';
+}
+
+/*@import '_layout.css';*/
+
+/*@import 'types/_shapes.scss';*/
+/*@import 'types/_raised.scss';*/
+/*@import 'types/_sizes.scss';*/
+

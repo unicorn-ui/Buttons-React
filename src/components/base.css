@@ -1,0 +1,332 @@
+@import './options.css';
+
+
+/*
+* Base Button Style
+*
+* The default values for the .button class
+*/
+.btn {
+  color: var(--ubtn-font-color);
+  background-color: var(--ubtn-bgcolor);
+  border-color: var(--ubtn-bgcolor);
+  font-weight: var(--ubtn-font-weight);
+  font-size: var(--ubtn-font-size);
+  font-family: var(--ubtn-font-family);
+  text-decoration: none;
+  text-align: center;
+  line-height: var(--ubtn-line-height);
+  height: var(--ubtn-height);
+  padding: 0 var(--ubtn-height);
+  margin: 0;
+  display: inline-block;
+  appearance: none;
+  cursor: pointer;
+  border: none;
+  box-sizing: border-box;
+
+  transition-property: all;
+  transition-duration:.3s;
+
+
+  &:visited {
+    color: var(--ubtn-font-color);
+  }
+
+  &:hover,
+  &:focus {
+    opacity: .7;
+    text-decoration: none;
+    outline: none;
+  }
+
+  &:active,
+  &.active,
+  &.is-active {
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .3);
+    text-decoration: none;
+    transition-duration: 0s;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2);
+    opacity: .7;
+  }
+
+  /*
+  * Disabled State
+  *
+  * The disabled state uses the class .disabled, is-disabled,
+  * and the form attribute disabled="disabled".
+  * The use of !important is only added because this is a state
+  * that must be applied to all buttons when in a disabled state.
+  */
+  &.disabled,
+  &.is-disabled,
+  &:disabled {
+    top: 0 !important;
+    background: #EEE !important;
+    border: 1px solid #DDD !important;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 1) !important;
+    color: #CCC !important;
+    cursor: default !important;
+    appearance: none !important;
+    box-shadow: none !important;
+    opacity:.8 !important;
+  }
+}
+
+.btn-primary {
+  background-color: var(--ubtn-primary);
+  border-color: var(--ubtn-primary);
+  color: var(--ubtn-primary-color);
+  &:visited {
+    color: var(--ubtn-primary-color);
+  }
+
+  &:active,
+  &.active,
+  &.is-active
+  &:hover,
+  &:focus {
+    color: var(--ubtn-primary-color);
+    opacity: .7;
+  }
+}
+
+.btn-secondary {
+  background-color: var(--ubtn-secondary);
+  border: 1px solid var(--ubtn-secondary-color);
+  color: var(--ubtn-secondary-color);
+  &:visited {
+    color: var(--ubtn-secondary-color);
+  }
+
+  &:active,
+  &.active,
+  &.is-active
+  &:hover,
+  &:focus {
+    color: var(--ubtn-secondary-color);
+    opacity: .7;
+  }
+}
+
+.btn-action {
+  background-color: var(--ubtn-action);
+  border: 1px solid var(--ubtn-action-color);
+  color: var(--ubtn-action-color);
+  &:visited {
+    color: var(--ubtn-action-color);
+  }
+
+  &:active,
+  &.active,
+  &.is-active
+  &:hover,
+  &:focus {
+    color: var(--ubtn-action-color);
+    opacity: .7;
+  }
+}
+
+.btn-highlight {
+  background-color: var(--ubtn-highlight);
+  border: 1px solid var(--ubtn-highlight-color);
+  color: var(--ubtn-highlight-color);
+  &:visited {
+    color: var(--ubtn-highlight-color);
+  }
+
+  &:active,
+  &.active,
+  &.is-active
+  &:hover,
+  &:focus {
+    color: var(--ubtn-highlight-color);
+    opacity: .7;
+  }
+}
+
+
+/*
+* Base Button Tyography
+*
+*/
+.btn-uppercase {
+  text-transform: uppercase;
+}
+.btn-lowercase {
+  text-transform: lowercase;
+}
+.btn-capitalize {
+  text-transform: capitalize;
+}
+.btn-small-caps {
+  font-variant: small-caps;
+}
+
+.btn-icon-txt-large {
+  font-size: 36px !important;
+}
+
+/*
+* Base padding
+*
+*/
+.btn-width-small {
+  padding: 0 10px !important;
+}
+
+
+
+/*
+// Secondary
+$secondaryBackground: $white;
+$secondaryColor: palette(primary);
+
+.btn-secondary,
+.btn-raised-secondary,
+.btn-secondary-flat {
+  background-color: $secondaryBackground;
+  border-color: $secondaryBackground;
+  color: $secondaryColor;
+  &:visited {
+    color: $secondaryColor;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: lighten($secondaryBackground, 10%);
+    border-color: lighten($secondaryBackground, 10%);
+    color: $secondaryColor;
+  }
+
+  &:active,
+  &.active,
+  &.is-active {
+    background-color: desaturate($secondaryBackground, 10%);
+    border-color: desaturate($secondaryBackground, 10%);
+    color: darken($secondaryBackground, 10%);
+  }
+}
+
+// Action
+$actionBackground: palette(action);
+$actionColor: $white;
+
+.btn-action,
+.btn-raised-action,
+.btn-action-flat {
+  background-color: $actionBackground;
+  border-color: $actionBackground;
+  color: $actionColor;
+  &:visited {
+    color: $actionColor;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: lighten($actionBackground, 10%);
+    border-color: lighten($actionBackground, 10%);
+    color: $actionColor;
+  }
+
+  &:active,
+  &.active,
+  &.is-active {
+    background-color: desaturate($actionBackground, 10%);
+    border-color: desaturate($actionBackground, 10%);
+    color: darken($actionBackground, 10%);
+  }
+}
+
+// Highlight
+$highlightBackground: palette(highlight, hover);
+$highlightColor: $white;
+
+.btn-highlight,
+.btn-raised-highlight,
+.btn-highlight-secondary,
+.btn-highlight-flat {
+  background-color: $highlightBackground;
+  border-color: $highlightBackground;
+  color: $highlightColor;
+  &:visited {
+    color: $highlightColor;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: lighten($highlightBackground, 10%);
+    border-color: lighten($highlightBackground, 10%);
+    color: $highlightColor;
+  }
+
+  &:active,
+  &.active,
+  &.is-active {
+    background-color: desaturate($highlightBackground, 10%);
+    border-color: desaturate($highlightBackground, 10%);
+    color: darken($highlightBackground, 10%);
+  }
+}
+
+// Warning
+$warningBackground: palette(warning, hover);
+$warningColor: $white;
+
+.btn-warning,
+.btn-raised-warning,
+.btn-warning-secondary,
+.btn-warning-flat {
+  background-color: $warningBackground;
+  border-color: $warningBackground;
+  color: $warningColor;
+  &:visited {
+    color: $warningColor;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: lighten($warningBackground, 10%);
+    border-color: lighten($warningBackground, 10%);
+    color: $warningColor;
+  }
+
+  &:active,
+  &.active,
+  &.is-active {
+    background-color: desaturate($warningBackground, 10%);
+    border-color: desaturate($warningBackground, 10%);
+    color: darken($warningBackground, 10%);
+  }
+}
+
+// Caution
+$cautionBackground: palette(caution);
+$cautionColor: $white;
+
+.btn-caution,
+.btn-raised-caution,
+.btn-caution-flat {
+  background-color: $cautionBackground;
+  border-color: $cautionBackground;
+  color: $cautionColor;
+  &:visited {
+    color: $cautionColor;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: lighten($cautionBackground, 10%);
+    border-color: lighten($cautionBackground, 10%);
+    color: $cautionColor;
+  }
+
+  &:active,
+  &.active,
+  &.is-active {
+    background-color: desaturate($cautionBackground, 10%);
+    border-color: desaturate($cautionBackground, 10%);
+    color: darken($cautionBackground, 10%);
+  }
+}
+*/

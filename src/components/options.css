@@ -1,0 +1,17 @@
+:root {
+  --ubtn-bgcolor: #EEE;
+  --ubtn-font-color: #666;
+  --ubtn-font-weight: 300;
+  --ubtn-font-size: 16px;
+  --ubtn-height: 40px;
+  --ubtn-line-height: 38px;
+  --ubtn-font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif ;
+  --ubtn-primary: #1b9af7;
+  --ubtn-primary-color: #ffffff;
+  --ubtn-secondary: transparent;
+  --ubtn-secondary-color: #1b9af7;
+  --ubtn-action: #a5de37;
+  --ubtn-action-color: #ffffff;
+  --ubtn-highlight: #feae1b;
+  --ubtn-highlight-color: #ffffff;
+}

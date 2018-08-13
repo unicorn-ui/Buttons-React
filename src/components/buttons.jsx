@@ -1,11 +1,10 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import { compact, omit } from 'underscore';
-import styles from './buttons.scss';
+import styles from './buttons-lite.css';
 
 function getClasses(className, { color, shape, size, link }) {
   const shouldAddBase = color || shape || size || link;
-
   const classes = compact([
     color && styles[color],
     shape && styles[shape],

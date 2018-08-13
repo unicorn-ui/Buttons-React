@@ -10,7 +10,7 @@ module.exports = {
   },
   pagePerSection: true,
   serverPort: 6061,
-  showUsage: true,
-  showCode: true,
+  usageMode: 'expand',
+  exampleMode: 'expand',
   skipComponentsWithoutExample: true,
 };
