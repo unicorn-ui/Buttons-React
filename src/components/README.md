@@ -69,3 +69,8 @@ Sizes.
 ```jsx
 <Button raised>Raised</Button>
 ```
+
+Raised.
+```jsx
+<Button raised color='primary' shape='rounded'>Raised Rounded Primary</Button>
+```

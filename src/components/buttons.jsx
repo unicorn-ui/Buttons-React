@@ -17,18 +17,11 @@ function getRaised(raised, color) {
   return styles[raisedKey];
 }
 
-function getColor(raised, color) {
-  // Raised gets its own color
-  if (raised) return false;
-  return color && styles[color];
-}
-
 function getClasses(className, { color, shape, size, link, block, raised }) {
   const shouldAddBase = color || shape || size || link || block || raised;
   const raisedVal = getRaised(raised, color);
-  const colorVal = getColor(raised, color);
   const classes = compact([
-    colorVal,
+    color && styles[color],
     raisedVal,
     shape && styles[shape],
     size && styles[size],

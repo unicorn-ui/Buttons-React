@@ -73,3 +73,7 @@
 .raised {
   composes: btn-raised from './types/raised.css';
 }
+
+.raised-primary {
+  composes: btn-raised-primary from './types/raised.css';
+}

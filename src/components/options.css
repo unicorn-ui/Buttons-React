@@ -9,6 +9,8 @@
   --ubtn-line-height: 38px;
   --ubtn-font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif ;
   --ubtn-primary: #1b9af7;
+  --ubtn-primary-lightened: #34a5f8; /* 5% */
+  --ubtn-primary-darkened: #0888e6; /* 7% */
   --ubtn-primary-color: #ffffff;
   --ubtn-secondary: transparent;
   --ubtn-secondary-color: #1b9af7;
