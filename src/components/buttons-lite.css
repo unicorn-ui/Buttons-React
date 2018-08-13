@@ -2,7 +2,6 @@
 /*@import '_mixins.css';*/
 @import './base.css';
 
-
 .button {
   composes: btn from './base.css';
 }
@@ -22,6 +21,15 @@
 .highlight {
   composes: btn-highlight from './base.css';
 }
+
+.warning {
+  composes: btn-warning from './base.css';
+}
+
+.caution {
+  composes: btn-caution from './base.css';
+}
+
 
 /*@import '_layout.css';*/
 

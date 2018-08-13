@@ -145,6 +145,41 @@
   }
 }
 
+.btn-warning {
+  background-color: var(--ubtn-warning);
+  border: 1px solid var(--ubtn-warning);
+  color: var(--ubtn-warning-color);
+  &:visited {
+    color: var(--ubtn-warning-color);
+  }
+
+  &:active,
+  &.active,
+  &.is-active
+  &:hover,
+  &:focus {
+    color: var(--ubtn-warning-color);
+    opacity: .7;
+  }
+}
+
+.btn-caution {
+  background-color: var(--ubtn-caution);
+  border: 1px solid var(--ubtn-caution-color);
+  color: var(--ubtn-caution-color);
+  &:visited {
+    color: var(--ubtn-caution-color);
+  }
+
+  &:active,
+  &.active,
+  &.is-active
+  &:hover,
+  &:focus {
+    color: var(--ubtn-caution-color);
+    opacity: .7;
+  }
+}
 
 /*
 * Base Button Tyography
@@ -174,159 +209,3 @@
 .btn-width-small {
   padding: 0 10px !important;
 }
-
-
-
-/*
-// Secondary
-$secondaryBackground: $white;
-$secondaryColor: palette(primary);
-
-.btn-secondary,
-.btn-raised-secondary,
-.btn-secondary-flat {
-  background-color: $secondaryBackground;
-  border-color: $secondaryBackground;
-  color: $secondaryColor;
-  &:visited {
-    color: $secondaryColor;
-  }
-
-  &:hover,
-  &:focus {
-    background-color: lighten($secondaryBackground, 10%);
-    border-color: lighten($secondaryBackground, 10%);
-    color: $secondaryColor;
-  }
-
-  &:active,
-  &.active,
-  &.is-active {
-    background-color: desaturate($secondaryBackground, 10%);
-    border-color: desaturate($secondaryBackground, 10%);
-    color: darken($secondaryBackground, 10%);
-  }
-}
-
-// Action
-$actionBackground: palette(action);
-$actionColor: $white;
-
-.btn-action,
-.btn-raised-action,
-.btn-action-flat {
-  background-color: $actionBackground;
-  border-color: $actionBackground;
-  color: $actionColor;
-  &:visited {
-    color: $actionColor;
-  }
-
-  &:hover,
-  &:focus {
-    background-color: lighten($actionBackground, 10%);
-    border-color: lighten($actionBackground, 10%);
-    color: $actionColor;
-  }
-
-  &:active,
-  &.active,
-  &.is-active {
-    background-color: desaturate($actionBackground, 10%);
-    border-color: desaturate($actionBackground, 10%);
-    color: darken($actionBackground, 10%);
-  }
-}
-
-// Highlight
-$highlightBackground: palette(highlight, hover);
-$highlightColor: $white;
-
-.btn-highlight,
-.btn-raised-highlight,
-.btn-highlight-secondary,
-.btn-highlight-flat {
-  background-color: $highlightBackground;
-  border-color: $highlightBackground;
-  color: $highlightColor;
-  &:visited {
-    color: $highlightColor;
-  }
-
-  &:hover,
-  &:focus {
-    background-color: lighten($highlightBackground, 10%);
-    border-color: lighten($highlightBackground, 10%);
-    color: $highlightColor;
-  }
-
-  &:active,
-  &.active,
-  &.is-active {
-    background-color: desaturate($highlightBackground, 10%);
-    border-color: desaturate($highlightBackground, 10%);
-    color: darken($highlightBackground, 10%);
-  }
-}
-
-// Warning
-$warningBackground: palette(warning, hover);
-$warningColor: $white;
-
-.btn-warning,
-.btn-raised-warning,
-.btn-warning-secondary,
-.btn-warning-flat {
-  background-color: $warningBackground;
-  border-color: $warningBackground;
-  color: $warningColor;
-  &:visited {
-    color: $warningColor;
-  }
-
-  &:hover,
-  &:focus {
-    background-color: lighten($warningBackground, 10%);
-    border-color: lighten($warningBackground, 10%);
-    color: $warningColor;
-  }
-
-  &:active,
-  &.active,
-  &.is-active {
-    background-color: desaturate($warningBackground, 10%);
-    border-color: desaturate($warningBackground, 10%);
-    color: darken($warningBackground, 10%);
-  }
-}
-
-// Caution
-$cautionBackground: palette(caution);
-$cautionColor: $white;
-
-.btn-caution,
-.btn-raised-caution,
-.btn-caution-flat {
-  background-color: $cautionBackground;
-  border-color: $cautionBackground;
-  color: $cautionColor;
-  &:visited {
-    color: $cautionColor;
-  }
-
-  &:hover,
-  &:focus {
-    background-color: lighten($cautionBackground, 10%);
-    border-color: lighten($cautionBackground, 10%);
-    color: $cautionColor;
-  }
-
-  &:active,
-  &.active,
-  &.is-active {
-    background-color: desaturate($cautionBackground, 10%);
-    border-color: desaturate($cautionBackground, 10%);
-    color: darken($cautionBackground, 10%);
-  }
-}
-*/
