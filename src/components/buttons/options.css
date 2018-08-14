@@ -1,7 +1,5 @@
 :root {
   --ubtn-bgcolor: #EEE;
-  --ubtn-bgcolor-lightened: #ffffff; /* 5% */
-  --ubtn-bgcolor-darkened: #dcdcdc; /* 7% */
   --ubtn-font-color: #666;
   --ubtn-font-weight: 300;
   --ubtn-font-size: 16px;
