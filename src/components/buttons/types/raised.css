@@ -27,89 +27,71 @@
 }
 
 .btn-raised-primary {
-  border-color: var(--ubtn-primary-darkened);
-  background: linear-gradient(to bottom, var(--ubtn-primary-lightened), var(--ubtn-primary-darkened));
+  border-color: color-mod(var(--ubtn-primary) shade(12%));
+  background: linear-gradient(to bottom, color-mod(var(--ubtn-primary) tint(15%)), color-mod(var(--ubtn-primary) shade(9%)));
 
   &:hover,
   &:focus {
-    background: linear-gradient(to bottom,  var(--ubtn-primary-darkened), var(--ubtn-primary-lightened));
-    opacity: .8;
+    background: linear-gradient(to bottom, color-mod(var(--ubtn-primary) tint(20%)), color-mod(var(--ubtn-primary) shade(12%)));
   }
-  &:active,
-  &.active,
-  &.is-active  {
-    border-color: var(--ubtn-primary-darkened);
-    opacity: .8;
+  &:active {
+    border-color: color-mod(var(--ubtn-primary) shade(12%));
+    background: color-mod(var(--ubtn-primary) saturation(-10%));
   }
 }
 
 .btn-raised-action {
-  border-color: var(--ubtn-action-darkened);
-  background: linear-gradient(to bottom, var(--ubtn-action-lightened), var(--ubtn-action-darkened));
+  border-color: color-mod(var(--ubtn-action) shade(12%));
+  background: linear-gradient(to bottom, color-mod(var(--ubtn-action) tint(15%)), color-mod(var(--ubtn-action) shade(9%)));
 
   &:hover,
   &:focus {
-    background: linear-gradient(to bottom,  var(--ubtn-action-darkened), var(--ubtn-action-lightened));
-    opacity: .8;
+    background: linear-gradient(to bottom, color-mod(var(--ubtn-action) tint(20%)), color-mod(var(--ubtn-action) shade(12%)));
   }
-  &:active,
-  &.active,
-  &.is-active  {
-    border-color: var(--ubtn-action-darkened);
-    opacity: .8;
+  &:active {
+    border-color: color-mod(var(--ubtn-action) shade(12%));
+    background: color-mod(var(--ubtn-action) saturation(-10%));
   }
 }
-
 
 .btn-raised-highlight {
-  border-color: var(--ubtn-highlight-darkened);
-  background: linear-gradient(to bottom, var(--ubtn-highlight-lightened), var(--ubtn-highlight-darkened));
+  border-color: color-mod(var(--ubtn-highlight) shade(12%));
+  background: linear-gradient(to bottom, color-mod(var(--ubtn-highlight) tint(15%)), color-mod(var(--ubtn-highlight) shade(9%)));
 
   &:hover,
   &:focus {
-    background: linear-gradient(to bottom,  var(--ubtn-highlight-darkened), var(--ubtn-highlight-lightened));
-    opacity: .8;
+    background: linear-gradient(to bottom, color-mod(var(--ubtn-highlight) tint(20%)), color-mod(var(--ubtn-highlight) shade(12%)));
   }
-  &:active,
-  &.active,
-  &.is-active  {
-    border-color: var(--ubtn-highlight-darkened);
-    opacity: .8;
+  &:active {
+    border-color: color-mod(var(--ubtn-highlight) shade(12%));
+    background: color-mod(var(--ubtn-highlight) saturation(-10%));
   }
 }
-
 
 .btn-raised-warning {
-  border-color: var(--ubtn-warning-darkened);
-  background: linear-gradient(to bottom, var(--ubtn-warning-lightened), var(--ubtn-warning-darkened));
+  border-color: color-mod(var(--ubtn-warning) shade(12%));
+  background: linear-gradient(to bottom, color-mod(var(--ubtn-warning) tint(15%)), color-mod(var(--ubtn-warning) shade(9%)));
 
   &:hover,
   &:focus {
-    background: linear-gradient(to bottom,  var(--ubtn-warning-darkened), var(--ubtn-warning-lightened));
-    opacity: .8;
+    background: linear-gradient(to bottom, color-mod(var(--ubtn-warning) tint(20%)), color-mod(var(--ubtn-warning) shade(12%)));
   }
-  &:active,
-  &.active,
-  &.is-active  {
-    border-color: var(--ubtn-warning-darkened);
-    opacity: .8;
+  &:active {
+    border-color: color-mod(var(--ubtn-warning) shade(12%));
+    background: color-mod(var(--ubtn-warning) saturation(-10%));
   }
 }
 
-
 .btn-raised-caution {
-  border-color: var(--ubtn-caution-darkened);
-  background: linear-gradient(to bottom, var(--ubtn-caution-lightened), var(--ubtn-caution-darkened));
+  border-color: color-mod(var(--ubtn-caution) shade(12%));
+  background: linear-gradient(to bottom, color-mod(var(--ubtn-caution) tint(15%)), color-mod(var(--ubtn-caution) shade(9%)));
 
   &:hover,
   &:focus {
-    background: linear-gradient(to bottom,  var(--ubtn-caution-darkened), var(--ubtn-caution-lightened));
-    opacity: .8;
+    background: linear-gradient(to bottom, color-mod(var(--ubtn-caution) tint(20%)), color-mod(var(--ubtn-caution) shade(12%)));
   }
-  &:active,
-  &.active,
-  &.is-active  {
-    border-color: var(--ubtn-caution-darkened);
-    opacity: .8;
+  &:active {
+    border-color: color-mod(var(--ubtn-caution) shade(12%));
+    background: color-mod(var(--ubtn-caution) saturation(-10%));
   }
 }

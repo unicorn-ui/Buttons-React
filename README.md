@@ -11,6 +11,8 @@ cd Buttons-React
 yarn && yarn styleguide
 ```
 
+Then visit `http://localhost:6061/` in your browser.
+
 ## Use in your project:
 
 As it's likely that you want to reconfigure colors, fonts, etc., our recommendation is to just drop in the `components/buttons` directory in to your project. From there, edit the values in `components/buttons/options.css` to whatever makes sense for your project.
