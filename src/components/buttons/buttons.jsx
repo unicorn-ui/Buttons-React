@@ -47,7 +47,7 @@ export default function Button({ children, className, ...rest }) {
 }
 
 Button.propTypes = {
-  color: PropTypes.oneOf(['primary', 'secondary', 'action', 'highlight', 'warning', 'caution']),
+  color: PropTypes.oneOf(['primary', 'action', 'highlight', 'warning', 'caution']),
   shape: PropTypes.oneOf(['rounded', 'pill']),
   size: PropTypes.oneOf(['tiny', 'small', 'normal', 'large', 'jumbo', 'giant']),
   block: PropTypes.bool,

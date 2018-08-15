@@ -13,10 +13,6 @@
   composes: btn-primary from './base.css';
 }
 
-.secondary {
-  composes: btn-secondary from './base.css';
-}
-
 .action {
   composes: btn-action from './base.css';
 }
