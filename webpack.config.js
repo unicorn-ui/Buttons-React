@@ -2,7 +2,7 @@ const path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackMd5Hash = require('webpack-md5-hash');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const devMode = process.env.NODE_ENV !== 'production'
 const rootPath = path.join(__dirname, '.');
 
@@ -24,7 +24,7 @@ module.exports = {
       filename: "./index.html"
     }),
     new WebpackMd5Hash(),
-    new CleanWebpackPlugin(['dist']),
+    new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output
       // both options are optional
@@ -49,7 +49,7 @@ module.exports = {
             loader: 'css-loader',
             options: {
               modules: true,
-              localIdentName: '[path]___[name]__[local]___[hash:base64:5]',
+              //localIdentName: '[path]___[name]__[local]___[hash:base64:5]',
               importLoaders: 1,
             },
           },
